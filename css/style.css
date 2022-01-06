@@ -1,0 +1,115 @@
+@font-face {
+	font-family: banglaFont;
+	src: url(../fonts/Shantiniketan.ttf);
+}
+
+* { /*base reset, without it, there happens to be some extra margin*/
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;   /*without it, there's extra white at the right side*/
+}
+
+/* START FROM HERE */
+
+
+body {
+  background: #f0f2f4;
+}
+
+.title_bar {
+  height: auto;
+  width: auto;
+  text-align: center;
+  background: white;
+}
+
+.title_bar img{
+    max-height:10vh;
+    max-width:65%;
+    height:auto;
+    width:auto;
+}
+
+#welcome {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#welcome img {
+  max-width: 100%;
+}
+
+hr {
+  border-top: 2px solid #ff6f69;
+}
+
+#video {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+footer {
+  background: #7CBB00;
+  font-weigth: 300;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 4px solid #8d9db6;
+  border-bottom: 4px solid #8d9db6;
+}
+
+footer p {
+  margin: 6px;
+}
+
+footer a {
+  color: black;
+  font-size: 1.1rem;
+  text-decoration: underline overline;
+}
+
+#posts {
+  padding: 20px 5px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 0.4rem;
+}
+
+.post {
+  background: #cfe0e8;
+  border-radius: 2px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.post-image{
+  display: block;
+  width: 100%;
+}
+
+.post-title {
+  font-family: banglaFont, sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 0.7rem 0.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
