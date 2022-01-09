@@ -16,6 +16,9 @@
 
 /* START FROM HERE */
 
+html {
+  font-size: 30px;
+}
 
 body {
   background: #f0f2f4;
